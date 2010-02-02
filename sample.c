@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <limits.h>
 #include "vsleep.h"
 
 int main(int argc, char *argv[]) {
