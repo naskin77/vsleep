@@ -1,0 +1,29 @@
+
+ vsleep - Wrapper function of sleep(Standard C Library)
+
+ What is it?
+ -----------
+
+ The vsleep is a wrapper function of sleep(Standard C Library).
+ This function count down second of sleep remain and no characters
+ at finish function.
+
+ How to Compile
+ --------------
+ Use makefile or compile manually. 
+
+ How To Use
+ ----------
+ See sample source code(sample.c).
+
+ Files
+ -----
+ vsleep.c : function body.
+ vsleep.h : header file, include your program.
+ sample.c : sample source of how to use vsleep().
+ makefile : makefile(GNU Make 3.81)
+
+ Test Environment
+ ----------------
+  o Mac OS X(10.5.8/Leopard)
+    - gcc version 4.0.1 (Apple Inc. build 5493).
