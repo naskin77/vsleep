@@ -8,6 +8,9 @@
  This function count down second of sleep remain and no characters
  at finish function.
 
+ If you want to know how many seconds remain of sleep, vsleep is
+ count down remain seconds.
+
  How to Compile
  --------------
  Use makefile or compile manually. 
