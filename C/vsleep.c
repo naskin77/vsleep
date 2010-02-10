@@ -1,6 +1,7 @@
 #include "vsleep.h"
 
 void vsleep(unsigned int sec) {
+#ifdef DEBUG 
 	unsigned int i, q, digit, base;
 	int j;
 
@@ -34,6 +35,10 @@ void vsleep(unsigned int sec) {
 	}
 	printf("\b");
 	fflush(stdout);
+#endif
+#ifndef DEBUG 
+	sleep(sec);
+#endif
 }
 
 unsigned int getDigit(unsigned int sec) {
