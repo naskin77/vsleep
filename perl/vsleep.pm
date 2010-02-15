@@ -11,7 +11,6 @@
 	sub vsleep {
 		my $sec = shift;
 		my $digit = 0;
-		my $base;
 		my $i;
 		my $j;
 		my $mode = $|;
@@ -44,8 +43,7 @@
 
 		sub printNumber {
 			my $sec = shift;
-			$_ = $sec;
-			my $digit = tr/0-9//;
+			my $digit = $sec =~ tr/0-9//;
 	
 			my $q = $sec;
 			for (my $j = $digit-1; $j >= 0; $j--) {
